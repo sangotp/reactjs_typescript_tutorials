@@ -25,6 +25,7 @@ import { RandomNumber } from './components/restriction/RandomNumber';
 import { Toast } from './components/templateliterals/Toast';
 import { Button } from './components/html/Button';
 import { CustomComponent } from './components/html/CustomComponent';
+import { Text } from './components/polymorphic/Text';
 
 function App() {
   const personName = {
@@ -116,7 +117,11 @@ function App() {
         My Button
       </Button> */}
 
-      <CustomComponent name='Thanh Sang' />
+      {/* <CustomComponent name='Thanh Sang' /> */}
+
+      <Text as='h1' size='lg' color='primary'>Heading</Text>
+      <Text as='p' size='sm' color='secondary'>Paragraph</Text>
+      <Text as='label' htmlFor='someId' size='md' color='secondary'>Label</Text>
     </div>
   );
 }
