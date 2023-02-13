@@ -9,6 +9,7 @@ import { Oscar } from './components/Oscar';
 import { Person } from './components/Person';
 import { PersonList } from './components/PersonList';
 import { Status } from './components/Status';
+import { User } from './components/state/User';
 
 function App() {
   const personName = {
@@ -36,7 +37,7 @@ function App() {
       {/* <Greet name='Sang' messageCount={20} isLoggedIn={false} />
       <Person name={personName} />
       <PersonList names={nameList} /> */}
-      
+
       {/* Parsing Props As A Union Of String Literals - To Catch Error When Status Is Not Defined */}
       {/* <Status status='loading' /> */}
 
@@ -60,8 +61,11 @@ function App() {
 
       {/* <Container styles={{ border: '1px solid black', padding: '1rem' }} /> */}
 
-      <Heading>UseState Hook</Heading>
-      <LoggedIn />
+      {/* <Heading>UseState Hook</Heading>
+      <LoggedIn /> */}
+
+      <Heading>UseState Hook Feature Value</Heading>
+      <User />
     </div>
   );
 }
