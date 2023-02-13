@@ -10,13 +10,14 @@ import { Person } from './components/Person';
 import { PersonList } from './components/PersonList';
 import { Status } from './components/Status';
 // import { User } from './components/state/User';
-import { Counter } from './components/state/Counter';
+// import { Counter } from './components/state/Counter';
 import { ThemeContextProvider } from './components/context/ThemeContext';
 import { UserContextProvider } from './components/context/UserContext';
 import { Box } from './components/context/Box';
 import { User } from './components/context/User';
 import { DOMRef } from './components/ref/DOMRef';
 import { MutableRef } from './components/ref/MutableRef';
+import { Counter } from './components/class/Counter';
 
 function App() {
   const personName = {
@@ -85,8 +86,10 @@ function App() {
         <User />
       </UserContextProvider> */}
 
-      <DOMRef />
-      <MutableRef />
+      {/* <DOMRef />
+      <MutableRef /> */}
+      
+      <Counter message='The count value is' />
     </div>
   );
 }
