@@ -1,5 +1,6 @@
 import './App.css';
 import { Button } from './components/Button';
+import { Container } from './components/Container';
 import { Greet } from './components/Greet';
 import { Heading } from './components/Heading';
 import { Input } from './components/Input';
@@ -46,7 +47,7 @@ function App() {
       {/* Parsing Props As An Optional Props */}
       {/* <Greet name='Sang' isLoggedIn={true} /> */}
 
-      <Heading>Tracking Input and Button Event In Console Log</Heading>
+      {/* <Heading>Tracking Input and Button Event In Console Log</Heading>
 
       <Input value='' handleOnChange={(event) => {
         console.log(event)
@@ -54,7 +55,9 @@ function App() {
 
       <Button handleOnClick={ (event, id) => {
         console.log('Clicked!', event, id);
-      }} />
+      }} /> */}
+
+      <Container styles={{ border: '1px solid black', padding: '1rem' }} />
     </div>
   );
 }
