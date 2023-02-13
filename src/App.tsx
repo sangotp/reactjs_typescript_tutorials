@@ -1,6 +1,8 @@
 import './App.css';
+import { Button } from './components/Button';
 import { Greet } from './components/Greet';
 import { Heading } from './components/Heading';
+import { Input } from './components/Input';
 import { Oscar } from './components/Oscar';
 import { Person } from './components/Person';
 import { PersonList } from './components/PersonList';
@@ -34,15 +36,25 @@ function App() {
       <PersonList names={nameList} /> */}
       
       {/* Parsing Props As A Union Of String Literals - To Catch Error When Status Is Not Defined */}
-      <Status status='loading' />
+      {/* <Status status='loading' /> */}
 
       {/* Parsing Props As A Children Component */}
-      <Oscar>
+      {/* <Oscar>
         <Heading>This is my heading inside Oscar Component.</Heading>
-      </Oscar>
+      </Oscar> */}
 
       {/* Parsing Props As An Optional Props */}
-      <Greet name='Sang' isLoggedIn={true} />
+      {/* <Greet name='Sang' isLoggedIn={true} /> */}
+
+      <Heading>Tracking Input and Button Event In Console Log</Heading>
+
+      <Input value='' handleOnChange={(event) => {
+        console.log(event)
+      }} />
+
+      <Button handleOnClick={ (event, id) => {
+        console.log('Clicked!', event, id);
+      }} />
     </div>
   );
 }
