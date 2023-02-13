@@ -24,6 +24,7 @@ import { List } from './components/generics/List';
 import { RandomNumber } from './components/restriction/RandomNumber';
 import { Toast } from './components/templateliterals/Toast';
 import { Button } from './components/html/Button';
+import { CustomComponent } from './components/html/CustomComponent';
 
 function App() {
   const personName = {
@@ -111,9 +112,11 @@ function App() {
 
       {/* <Toast position='center' /> */}
 
-      <Button varient='primary' onClick={() => console.log('Clicked')}>
+      {/* <Button varient='primary' onClick={() => console.log('Clicked')}>
         My Button
-      </Button>
+      </Button> */}
+
+      <CustomComponent name='Thanh Sang' />
     </div>
   );
 }
