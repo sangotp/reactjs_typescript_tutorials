@@ -15,6 +15,8 @@ import { ThemeContextProvider } from './components/context/ThemeContext';
 import { UserContextProvider } from './components/context/UserContext';
 import { Box } from './components/context/Box';
 import { User } from './components/context/User';
+import { DOMRef } from './components/ref/DOMRef';
+import { MutableRef } from './components/ref/MutableRef';
 
 function App() {
   const personName = {
@@ -75,13 +77,16 @@ function App() {
       {/* <Heading>UseReducer Hook</Heading>
       <Counter /> */}
 
-      <ThemeContextProvider>
+      {/* <ThemeContextProvider>
         <Box />
       </ThemeContextProvider>
 
       <UserContextProvider>
         <User />
-      </UserContextProvider>
+      </UserContextProvider> */}
+
+      <DOMRef />
+      <MutableRef />
     </div>
   );
 }
