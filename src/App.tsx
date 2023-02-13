@@ -10,6 +10,7 @@ import { Person } from './components/Person';
 import { PersonList } from './components/PersonList';
 import { Status } from './components/Status';
 import { User } from './components/state/User';
+import { Counter } from './components/state/Counter';
 
 function App() {
   const personName = {
@@ -64,8 +65,11 @@ function App() {
       {/* <Heading>UseState Hook</Heading>
       <LoggedIn /> */}
 
-      <Heading>UseState Hook Feature Value</Heading>
-      <User />
+      {/* <Heading>UseState Hook Feature Value</Heading>
+      <User /> */}
+
+      <Heading>UseReducer Hook</Heading>
+      <Counter />
     </div>
   );
 }
