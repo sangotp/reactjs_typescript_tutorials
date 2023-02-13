@@ -1,9 +1,10 @@
 import './App.css';
+import { Greet } from './components/Greet';
 
 function App() {
   return (
     <div className="App">
-      <h1>Welcome To ReactJS Application!</h1>
+      <Greet name='Sang' />
     </div>
   );
 }
