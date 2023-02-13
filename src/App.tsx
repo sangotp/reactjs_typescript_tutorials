@@ -9,10 +9,12 @@ import { Oscar } from './components/Oscar';
 import { Person } from './components/Person';
 import { PersonList } from './components/PersonList';
 import { Status } from './components/Status';
-import { User } from './components/state/User';
+// import { User } from './components/state/User';
 import { Counter } from './components/state/Counter';
-import { ThemeContextProvider } from './components/context/ThemeContext'
+import { ThemeContextProvider } from './components/context/ThemeContext';
+import { UserContextProvider } from './components/context/UserContext';
 import { Box } from './components/context/Box';
+import { User } from './components/context/User';
 
 function App() {
   const personName = {
@@ -76,6 +78,10 @@ function App() {
       <ThemeContextProvider>
         <Box />
       </ThemeContextProvider>
+
+      <UserContextProvider>
+        <User />
+      </UserContextProvider>
     </div>
   );
 }
