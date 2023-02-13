@@ -1,5 +1,5 @@
 import './App.css';
-import { Button } from './components/Button';
+// import { Button } from './components/Button';
 import { Container } from './components/Container';
 import { Greet } from './components/Greet';
 import { Heading } from './components/Heading';
@@ -23,6 +23,7 @@ import { Profile } from './components/auth/Profile';
 import { List } from './components/generics/List';
 import { RandomNumber } from './components/restriction/RandomNumber';
 import { Toast } from './components/templateliterals/Toast';
+import { Button } from './components/html/Button';
 
 function App() {
   const personName = {
@@ -108,7 +109,11 @@ function App() {
 
       {/* <RandomNumber value={10} isPositive /> */}
 
-      <Toast position='center' />
+      {/* <Toast position='center' /> */}
+
+      <Button varient='primary' onClick={() => console.log('Clicked')}>
+        My Button
+      </Button>
     </div>
   );
 }
