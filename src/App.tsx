@@ -11,6 +11,8 @@ import { PersonList } from './components/PersonList';
 import { Status } from './components/Status';
 import { User } from './components/state/User';
 import { Counter } from './components/state/Counter';
+import { ThemeContextProvider } from './components/context/ThemeContext'
+import { Box } from './components/context/Box';
 
 function App() {
   const personName = {
@@ -68,8 +70,12 @@ function App() {
       {/* <Heading>UseState Hook Feature Value</Heading>
       <User /> */}
 
-      <Heading>UseReducer Hook</Heading>
-      <Counter />
+      {/* <Heading>UseReducer Hook</Heading>
+      <Counter /> */}
+
+      <ThemeContextProvider>
+        <Box />
+      </ThemeContextProvider>
     </div>
   );
 }
