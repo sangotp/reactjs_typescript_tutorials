@@ -20,6 +20,7 @@ import { MutableRef } from './components/ref/MutableRef';
 import { Counter } from './components/class/Counter';
 import { Private } from './components/auth/Private';
 import { Profile } from './components/auth/Profile';
+import { List } from './components/generics/List';
 
 function App() {
   const personName = {
@@ -90,10 +91,18 @@ function App() {
 
       {/* <DOMRef />
       <MutableRef /> */}
-      
+
       {/* <Counter message='The count value is' /> */}
 
-      <Private isLoggedIn={true} Component={Profile} />
+      {/* <Private isLoggedIn={true} Component={Profile} /> */}
+
+      {/* <List items={['Batman', 'Superman', 'Wonder Woman']} onClick={(item) => console.log(item)} />
+      <List items={[1, 2, 3]} onClick={(item) => console.log(item)} /> */}
+      <List items={[
+        { id: 1, name: 'Sang', email: 'example@abc.com' },
+        { id: 2, name: 'Le', email: 'example@abc.com' },
+        { id: 3, name: 'Li', email: 'example@abc.com' }
+      ]} onClick={(item) => console.log(item)} />
     </div>
   );
 }
