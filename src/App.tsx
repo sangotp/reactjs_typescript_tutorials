@@ -21,6 +21,7 @@ import { Counter } from './components/class/Counter';
 import { Private } from './components/auth/Private';
 import { Profile } from './components/auth/Profile';
 import { List } from './components/generics/List';
+import { RandomNumber } from './components/restriction/RandomNumber';
 
 function App() {
   const personName = {
@@ -98,11 +99,13 @@ function App() {
 
       {/* <List items={['Batman', 'Superman', 'Wonder Woman']} onClick={(item) => console.log(item)} />
       <List items={[1, 2, 3]} onClick={(item) => console.log(item)} /> */}
-      <List items={[
+      {/* <List items={[
         { id: 1, name: 'Sang', email: 'example@abc.com' },
         { id: 2, name: 'Le', email: 'example@abc.com' },
         { id: 3, name: 'Li', email: 'example@abc.com' }
-      ]} onClick={(item) => console.log(item)} />
+      ]} onClick={(item) => console.log(item)} /> */}
+
+      <RandomNumber value={10} isPositive />
     </div>
   );
 }
